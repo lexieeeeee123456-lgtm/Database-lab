@@ -1,0 +1,228 @@
+:root {
+    --navy: #1e3c72;
+    --blue: #2a5298;
+    --gold: #c9a962;
+    --text: #1a1a2e;
+    --muted: #8a8aa3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a1628, #1e3c72, #2a5298);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-page {
+    width: 100%;
+    max-width: 900px;
+}
+
+.auth-card {
+    display: flex;
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+    min-height: 520px;
+}
+
+.card-left {
+    flex: 1;
+    background: url(../image/Login.jpg) center/cover;
+    position: relative;
+    min-width: 300px;
+}
+
+.card-left .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(10,22,40,0.85), rgba(30,60,114,0.75));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.card-left h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.card-left h1 span {
+    color: var(--gold);
+    font-style: italic;
+}
+
+.card-left p {
+    color: rgba(255,255,255,0.7);
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.card-right {
+    flex: 1;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-header {
+    margin-bottom: 28px;
+}
+
+.form-header h2 {
+    font-size: 1.8rem;
+    color: var(--navy);
+    margin-bottom: 5px;
+}
+
+.form-header p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.input-wrap i {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.input-wrap input {
+    width: 100%;
+    padding: 14px 14px 14px 46px;
+    border: 2px solid #e8e8e8;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-wrap input:focus {
+    border-color: var(--gold);
+    box-shadow: 0 4px 15px rgba(201,169,98,0.15);
+}
+
+.input-wrap input::placeholder {
+    color: #bbb;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.remember input {
+    accent-color: var(--navy);
+}
+
+.forgot {
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot:hover {
+    color: var(--gold);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, var(--navy), var(--blue));
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(30,60,114,0.4);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.footer p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.footer a {
+    color: var(--navy);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--gold);
+}
+
+@media (max-width: 768px) {
+    .auth-card { flex-direction: column; }
+    .card-left { min-height: 160px; min-width: auto; }
+    .card-left h1 { font-size: 2rem; }
+    .card-right { padding: 30px 25px; }
+}
