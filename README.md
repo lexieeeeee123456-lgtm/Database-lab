@@ -107,21 +107,21 @@ Airline administrators authenticate separately from customers. Their session is 
 
 ## Screenshots
 
-Add screenshots here after capturing them locally:
+### Flight search
 
-```text
-docs/screenshots/home.png
-docs/screenshots/search-results.png
-docs/screenshots/admin-report.png
-```
+![Bon Avion flight search](docs/screenshots/home.png)
 
-Then replace this section with:
+### Membership programme
 
-```md
-![Flight search](docs/screenshots/home.png)
-![Availability-aware search results](docs/screenshots/search-results.png)
-![Airline booking and revenue report](docs/screenshots/admin-report.png)
-```
+Membership status, total spend, progress to the next tier, and tier benefits are presented in one customer-facing view.
+
+![Membership programme and spending progress](docs/screenshots/membership-program.png)
+
+### Booking history
+
+Customers can switch between upcoming and completed journeys and review route, cabin, schedule, and amount.
+
+![Upcoming booking history](docs/screenshots/orders.png)
 
 ## Data model at a glance
 
