@@ -109,19 +109,19 @@ Airline administrators authenticate separately from customers. Their session is 
 
 ### Flight search
 
-![Bon Avion flight search](docs/screenshots/home.png)
+![Bon Avion flight search](home.png)
 
 ### Membership programme
 
 Membership status, total spend, progress to the next tier, and tier benefits are presented in one customer-facing view.
 
-![Membership programme and spending progress](docs/screenshots/membership-program.png)
+![Membership programme and spending progress](membership-program.png)
 
 ### Booking history
 
 Customers can switch between upcoming and completed journeys and review route, cabin, schedule, and amount.
 
-![Upcoming booking history](docs/screenshots/orders.png)
+![Upcoming booking history](orders.png)
 
 ## Data model at a glance
 
